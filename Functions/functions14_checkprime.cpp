@@ -5,6 +5,8 @@ bool checkprime(int n)
     int c=0;
     for(int i=1;i<n;i++)
     {
+        if(n<=1)
+            return 0;
         if(n%i==0)
         {
             c++;
